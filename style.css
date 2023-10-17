@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  flex-direction: row;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  display: none;
+}
+nav i {
+  display: flex;
+  font-size: 30px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.section {
+  padding: 40px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section1 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.section1 img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  width: 100%;
+}
+
+.section2 img {
+  border-radius: 10px;
+}
+
+.section1 h2 {
+  font-size: 2.5rem;
+}
+
+.catGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.catGrid img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  nav i {
+    visibility: hidden;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    display: flex;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+  }
+}
